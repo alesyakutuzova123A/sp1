@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SP ESTATE s.r.o.</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="nav__container">
+            <div class="container">
+                <nav>
+
+                    <a class="logo" href="index.html">
+                        <picture>
+                            <source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="logo">
+                        </picture>
+                    </a>
+                    <div class="navbar">
+                        <div class="header_burger">
+                            <span></span>
+                        </div>
+                        <div class="navbar__menu">
+                            <ul>
+                                <li>
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="services.html">Services</a>
+                                </li>
+                                <li>
+                                    <a href="contacts.html">Contacts</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+
+                </nav>
+            </div>
+        </div>
+
+
+        <div class="services">
+            <div class="container">
+                <div class="services__wrap">
+                    <h1>SP ESTATE s.r.o.</h1>
+                    <p class="contacts__text">Dear Sirs,
+
+                    </p>
+                    <p class="contacts__text">our company is engaged in intermediary and consulting activities on the
+                        market of commercial, industrial and residential real estate in the Czech Republic, as well as
+                        completing high-tech projects with modern materials and components, including electronic and
+                        software solutions.
+
+                    </p>
+                    <p class="contacts__text">The main specialization is the organization and management of projects
+                        that include the creation of concepts, architectural and engineering solutions, the provision of
+                        turnkey construction and design services and the subsequent operation and management of real
+                        estate objects and complexes.
+
+                    </p>
+                    <p class="contacts__text">The key principle of our company is customer focus. We will select for you
+                        not only the location and reliable subcontractors, but we will accompany your project from idea
+                        up to sale.
+
+
+                    </p>
+                    <p class="contacts__text">If your funds are not enough to fulfill the task, we will definitely find
+                        a way to finance your project.
+
+
+
+                    </p>
+                </div>
+            </div>
+
+            <picture>
+                <source srcset="img/services.webp" type="image/webp"><img src="img/services.png" alt="handshake">
+            </picture>
+        </div>
+
+    </header>
+    <footer>
+        <div class="container">
+            <div class="footer__text">
+                <p>©SP ESTATE s.r.o. 2021
+                </p>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+                    <li>
+                        <a href="contacts.html">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+    <script src="https://yandex.st/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.header_burger').click(function (event) {
+                $('.header_burger, .navbar__menu').toggleClass('active');
+                $('body').toggleClass('lock');
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SP ESTATE s.r.o.</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="nav__container">
+            <div class="container">
+                <nav>
+                    <a class="logo" href="index.html"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="logo"></picture></a>
+                    <div class="navbar">
+                        <div class="header_burger">
+                            <span></span>
+                        </div>
+                        <div class="navbar__menu">
+                            <ul>
+                                <li>
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="services.html">Services</a>
+                                </li>
+                                <li>
+                                    <a href="contacts.html">Contacts</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="contacts__container">
+            <div class="container">
+                <div class="contacts">
+                    <div class="contacts__wrap">
+                        <ul>
+                            <li>
+                                <h4>Address</h4>
+                                <div class="contacts__item">
+                                    <picture><source srcset="img/geo.webp" type="image/webp"><img src="img/geo.png" alt="geo"></picture>
+                                    <p>Londynska 52, Prague 2, Czech republic</p>
+                                </div>
+                            </li>
+                            <li>
+                                <h4>PHONE NUMBER</h4>
+                                <div class="contacts__item">
+                                    <picture><source srcset="img/phone.webp" type="image/webp"><img src="img/phone.png" alt="phone"></picture>
+                                    <p>+420737009668</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contacts__form">
+                        <h2>online application</h2>
+                        <form action="">
+                            <input required placeholder="your name" type="text">
+                            <input required placeholder="your email" type="email">
+                            <input required placeholder="your text" type="text">
+                            <button>send</button>
+                        </form>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <footer>
+        <div class="container">
+            <div class="footer__text">
+                <p>©SP ESTATE s.r.o. 2021
+                </p>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+                    <li>
+                        <a href="contacts.html">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+    <script src="https://yandex.st/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.header_burger').click(function (event) {
+                $('.header_burger, .navbar__menu').toggleClass('active');
+                $('body').toggleClass('lock');
+            });
+        });
+    </script>
+</body>
+
+</html>
